@@ -90,7 +90,7 @@ body {
 
 }
 
-.menu__link::after {
+.menu-link__a::after {
   content: "";
   width: 0;
   height: 3px;
@@ -100,11 +100,11 @@ body {
   transition: all 0.2s linear;
 }
 
-.menu__link:hover.menu__link::after {
+.menu__link:hover .menu-link__a::after {
   width: 100%;
 }
 
-.menu__link.active::after {
+.menu__link.active .menu-link__a::after {
   width: 100%;
 }
 
@@ -880,6 +880,39 @@ flex: 1 1 0;
   text-decoration: none;
   color: inherit;
 }
+
+
+
+.header__container.active {
+  text-align: center;
+  display: block;
+}
+
+.header__container.active .menu {
+  padding: 0;
+}
+
+.header__container.active {
+  position: relative;
+}
+
+.header__container.active .burger {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.menu.active {
+  padding-left: 0;
+}
+
+.procedures__card {
+  min-height: 100%;
+  height: 100%;
+}
+
+
+
 
 
 

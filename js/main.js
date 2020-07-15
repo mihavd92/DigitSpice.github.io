@@ -73,6 +73,7 @@ $(function () {
   $("#burger").click(function (e) {
     e.preventDefault();
     $("#menu").toggleClass("active");
+    $("#header__container").addClass("active");
   });
   
   
@@ -81,10 +82,13 @@ $(function () {
     
     $(this).toggleClass("active");
     $("#burger").toggleClass("active");
+
   });
-  
+
+
   
 
+     
 
 
 
@@ -117,3 +121,4 @@ $(function () {
   }
 
 });
+
