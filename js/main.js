@@ -8,7 +8,7 @@ $(function () {
     autoplay: 1000,
     dots: false,
     infinite: true
-    
+
   });
 
   $('.procedures__cards').slick({
@@ -68,27 +68,27 @@ $(function () {
     $("#nav li").removeClass("active");
     $(this).closest("li").addClass("active");
   });
-  
-  
+
+
   $("#burger").click(function (e) {
     e.preventDefault();
     $("#menu").toggleClass("active");
     $("#header__container").addClass("active");
   });
-  
-  
+
+
   $("#menu").on("click", function(event) {
     event.preventDefault();
-    
+
     $(this).toggleClass("active");
     $("#burger").toggleClass("active");
 
   });
 
 
-  
 
-     
+
+
 
 
 
@@ -121,4 +121,7 @@ $(function () {
   }
 
 });
+
+let currentYear = document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
 
